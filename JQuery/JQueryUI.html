@@ -1,0 +1,181 @@
+<!DOCTYPE html>  
+<head>  
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+  <style>  
+  #draggable { width: 100px; height: 100px; padding: 0.5em; background:#7fffd4;}  
+  </style>  
+  <script>  
+  $(function() {  
+    $( "#draggable" ).draggable();  
+  });  
+
+  $(function() {  
+    $( "#accordion" ).accordion();  
+  });  
+
+
+
+  $(function() {  
+    var availableTags = [  
+      "ActionScript",  
+      "AppleScript",  
+      "Asp",  
+      "BASIC",  
+      "C",  
+      "C++",  
+      "Clojure",  
+      "COBOL",  
+      "ColdFusion",  
+      "Erlang",  
+      "Fortran",  
+      "Groovy",  
+      "Haskell",  
+      "Java",  
+      "JavaScript",  
+      "Lisp",  
+      "Perl",  
+      "PHP",  
+      "Python",  
+      "Ruby",  
+      "Scala",  
+      "Scheme"  
+    ];  
+    $( "#tags" ).autocomplete({  
+      source: availableTags  
+     
+   });  
+  });  
+
+  $(function() {  
+            $( "#datepicker-1" ).datepicker();  
+         });  
+
+     $(function() {  
+            $( "#menu-1" ).menu();  
+         });  
+
+         $(function() {  
+            $( "#progressbar-1" ).progressbar({  
+               value: 30  
+            });  
+         });  
+
+         $(function() {  
+            $( "#tabs-1" ).tabs();  
+         });  
+
+         $(function() {  
+$("#tooltip-1").tooltip();  
+$("#tooltip-2").tooltip();  
+});  
+
+$(function() {  
+$("#tooltip-1").tooltip();  
+$("#tooltip-2").tooltip();  
+}); 
+
+$(function() {  
+$("#tooltip-1").tooltip();  
+$("#tooltip-2").tooltip();  
+});  
+
+      </script>  
+
+  </script>  
+</head>  
+<body>  
+     <div id="draggable" class="ui-widget-content">  
+      <p>I am draggable!</p>  
+     </div>  
+
+     <div id="accordion">
+        <h3>Why JavaTpoint</h3>  
+        <div>  
+          <ul>  
+            <li>Life Time Validity</li>  
+            <li>Training by Java Professionals</li>  
+            <li>Get an opportunity to work on real time projects</li>  
+             <li>Interaction with Industry Experts</li>  
+              <li>Small Batches to focus on each student</li>  
+          </ul>  
+     </div>
+
+     <div class="ui-widget">  
+        <label for="tags">Tags: </label>  
+        <input id="tags">  
+        <p>Enter Date: <input type="text" id="datepicker-1"></p>
+
+        <div>
+            <ul id="menu-1">  
+                <li><a href="#">C</a></li>  
+                <li><a href="#">C++</a></li>  
+                <li><a href="#">Java</a>  
+                   <ul>  
+                      <li><a href="#">Core Java</a></li>  
+                      <li><a href="#">J2EE</a></li>  
+                      <li><a href="#">Spring</a></li>  
+                      <li><a href="#">Hibernate</a></li>  
+                      <li><a href="#">Struts</a></li>  
+                   </ul>  
+                </li>  
+                <li><a href="#">JSF</a></li>  
+                <li><a href="#">HTML5</a></li>  
+        </div>
+
+
+        <div>
+            <div id="progressbar-1"></div>   
+        </div>
+
+        <div id="tabs-1">  
+            <ul>  
+               <li><a href="#tabs-2">Poem</a></li>  
+               <li><a href="#tabs-3">Joke</a></li>  
+               <li><a href="#tabs-4">Quote</a></li>  
+            </ul>  
+            <div id="tabs-2">  
+               <p>Twinkle, twinkle, little star,<br/>  
+   How I wonder what you are.<br/>  
+   Up above the world so high,<br/>  
+   Like a diamond in the sky.<br/>  
+   Twinkle, twinkle, little star,<br/>  
+   How I wonder what you are!<br/>  
+    </p>  
+            </div>  
+            <div id="tabs-3">  
+   <p>Man said to God --- Why did you make women so beautiful?<br/>  
+   God said to man --- So that you will love them.<br/>  
+   Man said to God --- But why did you make them so dumb?<br/>   
+   God said to man --- So that they will love you.<br/> </p>  
+            </div>  
+            <div id="tabs-4">  
+               <p>" The whole secret of existence is to have no fear."  
+   Buddha</p>  
+            </div>  
+
+            <label for="comment">What is your comment:</label>  
+<input id="tooltip-1" title="We are asking your comment just for feedback">  
+<p><a id="tooltip-2" href="#" title="JavaTpoint is the best tutorial website.">  
+I also have a tooltip  
+</a></p>  
+
+<div id="progressbar-1"></div>   
+
+<label for="comment">What is your comment:</label>  
+<input id="tooltip-1" title="We are asking your comment just for feedback">  
+<p><a id="tooltip-2" href="#" title="JavaTpoint is the best tutorial website.">  
+I also have a tooltip  
+</a></p>  
+
+
+<label for="comment">What is your comment:</label>  
+<input id="tooltip-1" title="We are asking your comment just for feedback">  
+<p><a id="tooltip-2" href="#" title="JavaTpoint is the best tutorial website.">  
+I also have a tooltip  
+</a></p> 
+
+      </div>  
+</body>  
+</html>  
